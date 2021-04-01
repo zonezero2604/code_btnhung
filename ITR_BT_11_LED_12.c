@@ -19,7 +19,7 @@ int main()
 
 	//Khai Báo IO
 	pinMode(Led, OUTPUT);
-	pinMode(BT, INPUT);;
+	pinMode(BT, INPUT);
 
 	//interrupt
 	wiriPiISR(BT,INT_EDGE_BOTH, &xuly_ngat );
