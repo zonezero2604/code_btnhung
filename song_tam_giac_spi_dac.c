@@ -23,7 +23,7 @@ int main(void)
 			//tính giá trị D theo i D=deltaD*i
 			// gán giá trị D cho data 0 và data 1
 			//lưu ý D 12 bit dato0 8 bit data 1 8 bit 
-			D = 2949/100*i
+			D = 2949/100*i //16bit
 			data[0] = (D>>8)|0x30; // loại bỏ 8 bit mức thấp giữ lại 8 bit mức cao và | 0x30
 			data[1] = D;// khi gán 1 giá trị 16 bit xuống giá trị 8 bit thì 8 bit này chỉ lấy 8bit thấp
 			wiringPiSPIDataRW(spi_chanel,data,2);
